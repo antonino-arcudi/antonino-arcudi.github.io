@@ -30,18 +30,20 @@ h2.left-column {
     text-align: justify;
     
 }
-
+#Photo {
+    padding: 1.5em 1.5em 1.5em 1.5em;
+}
 .images {
     border-radius: 50%;
     height: 200px;
     max-width: 100%;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 1,5em;
-    display: block;
+   display: block;
 }
 .fas{
     font-size: 2em;
+
    
 }
 /*adding media queries for responsive */
