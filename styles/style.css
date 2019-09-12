@@ -1,3 +1,7 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
 .container  {
     display: grid;
     grid-template-columns: 1fr 2fr;
@@ -5,46 +9,6 @@
     max-width: 1000px;
     justify-content: center;
     margin: auto;
-}
-
-.left-side {
-    background-color: orange;
-}
-
-.right-side {
-    background-color: lightgray;
-}
-
-h2 {
-    text-transform: uppercase;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 1em;
-}
-h2.left-column {
-    text-align: center;
-    background-color: grey;
-    color: orange;
-}
-.left-p {
-    padding: 1.5em 1.5em 1.5em 1.5em;
-    text-align: justify;
-    
-}
-#Photo {
-    padding: 1.5em 1.5em 1.5em 1.5em;
-}
-.images {
-    border-radius: 50%;
-    height: 200px;
-    max-width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-   display: block;
-}
-.fas{
-    font-size: 2em;
-
-   
 }
 /*adding media queries for responsive */
 
@@ -55,3 +19,80 @@ h2.left-column {
     }
    
 } 
+.left-side {
+    background-color: #2196F3;
+}
+
+.right-side {
+    background-color: lightgray;
+    padding-left: 2em;
+    
+}
+
+#Education {
+    display: grid;
+    grid-template-columns: 10em 20em;
+}
+#Experience {
+    display: grid;
+    grid-template-columns: 10em 20em;
+}
+#References {
+    display: grid;
+    grid-template-columns: 20em 20em;
+}
+.right-hr {
+    color: #2196F3;
+}
+h1 {
+    text-align: left;
+}
+h2 {
+    text-transform: uppercase;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1em;
+}
+h2.left-column {
+    text-align: center;
+    background-color: #263238;
+    color: #2196F3;
+}
+.left-p {
+    padding: 1.5em 1.5em 1.5em 1.5em;
+    text-align: justify;
+    
+}
+#Photo {
+    padding: 1.5em 1.5em 1.5em 1.5em;
+}
+.image {
+    border-radius: 50%;
+    border-color: black;
+    border-style: solid;
+    border-width: 4px;
+    height: 200px;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+/*.fas{
+    font-size: 2em;
+} */
+.icon-left {
+    border-width:1px;
+    border-style: solid;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display:inline-block;
+    font-size: 1.5em;
+    text-align: center;
+    margin: 1em 0.2em 1em;
+}
+.icon-right {
+    color: #2196F3;
+}
+#Hobbies {
+    text-align: center;
+}
