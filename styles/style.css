@@ -173,6 +173,8 @@ ul {
     }
     ul {
         list-style: none;
+        margin: 0em 0em;
+        padding-left: 0em;
     }
     #About {
         height: auto;
