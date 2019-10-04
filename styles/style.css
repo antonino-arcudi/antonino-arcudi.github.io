@@ -171,5 +171,8 @@ ul {
     ul {
         list-style: none;
     }
+    #About {
+        height: auto;
+    }
 
 } 
