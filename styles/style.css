@@ -1,5 +1,8 @@
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent;}body{line-height:1;}ol,ul{list-style:none;}blockquote,q{quotes:none;}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none;}a img{border:none;}
+
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 21px;
 }
 
 .container  {
@@ -10,64 +13,98 @@ body {
     justify-content: center;
     margin: auto;
 }
-/*adding media queries for responsive */
 
-@media screen and (max-width: 600px) {
-    .container {
-      display: flex;
-      flex-direction: column;
-    }
-   
+.left-col {
+    background-color: #81D4FA;
+    /* adding width */
+}
+
+.right-col {
+   padding-left: 2em; 
+}
+
+.hidden {
+    display:none;
 } 
-.left-side {
-    background-color: #2196F3;
+
+.right-content {
+    display: grid;
+    grid-template-columns: 10em 27em;
+    gap: 0em 3em;
 }
 
-.right-side {
-    background-color: lightgray;
-    padding-left: 2em;
-    
+.name {
+    margin: 6em 0em 6em 0em;
+}
+hr {
+    color: #81D4FA;
+    height:1px; 
+    border:none;
+    color:#81D4FA; 
+    background-color:#81D4FA; 
+    width: 100%;
+
+}
+.first-name {
+    color: #81D4FA;
+}
+hr.name-hr {
+    text-align:left;
+    width:10%;
 }
 
-#Education {
-    display: grid;
-    grid-template-columns: 10em 20em;
-}
-#Experience {
-    display: grid;
-    grid-template-columns: 10em 20em;
-}
-#References {
-    display: grid;
-    grid-template-columns: 20em 20em;
-}
-.right-hr {
-    color: #2196F3;
-}
 h1 {
     text-align: left;
+    font-size: 3em;
+    font-weight: bold;
+    margin: 1.3em 0em 0em 0em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-transform: uppercase;
 }
 h2 {
     text-transform: uppercase;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
+    letter-spacing: 2px;
+    margin: 0.83em 0em;
 }
+
+#job-title {
+    text-transform: capitalize;
+    font-size: 1.3em;
+
+}
+
 h2.left-column {
     text-align: center;
     background-color: #263238;
-    color: #2196F3;
+    color: #81D4FA;
+    font-size: 1.2em;
+    padding: 0.23em 0em 0.23em 0em;
+}
+
+h3 {
+    margin: 1.16em 0em;
+    text-transform: uppercase;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+p {
+    margin:1em 0;
+    font-size: 0.9em;
 }
 .left-p {
     padding: 1.5em 1.5em 1.5em 1.5em;
     text-align: justify;
+    font-size: 0.9em;
     
 }
 #Photo {
     padding: 1.5em 1.5em 1.5em 1.5em;
 }
+
 .image {
     border-radius: 50%;
-    border-color: black;
+    border-color: black; /* changing color */
     border-style: solid;
     border-width: 4px;
     height: 200px;
@@ -76,23 +113,63 @@ h2.left-column {
     margin-right: auto;
     display: block;
 }
-/*.fas{
-    font-size: 2em;
-} */
+
 .icon-left {
     border-width:1px;
     border-style: solid;
     border-radius: 50%;
     width: 40px;
     height: 40px;
-    display:inline-block;
+    display: inline-block;
     font-size: 1.5em;
     text-align: center;
     margin: 1em 0.2em 1em;
 }
 .icon-right {
-    color: #2196F3;
+    color: #81D4FA;
 }
+
+ul {
+    margin: 1em 0em;
+    padding-left: 2.5em;
+    list-style: disc;
+}
+#About {
+    height: 33em;
+} 
 #Hobbies {
     text-align: center;
 }
+
+.hobbies-icons {
+    padding-top: 0.3em;
+}
+
+.references {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+}
+
+/*adding media queries for responsive for rest of website*/
+@media screen and (max-width: 600px) {
+    .container {
+      display: flex;
+      flex-direction: column;
+    }
+   .right-content {
+       display: flex;
+       flex-direction: column;
+   }
+   .hidden {
+       display: flex;
+       flex-direction: column;
+    }
+    h1,#title {
+        text-align: center;
+    }
+    ul {
+        list-style: none;
+    }
+
+} 

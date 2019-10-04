@@ -9,9 +9,15 @@
 </head>
 <body>
 <div class="container">
-    <div class="left-side">
+    <div class="left-col">
+        <!--- not showing on desktop -->
+            <div class="hidden" id="name">
+                    <h1><span class="first-name">Antonino</span>  Arcudi</h1>
+                    <h2 id="job-title">Web Developer</h2>
+                    <hr class="name-hr">
+                </div>
         <div id="Photo">
-            <img class="image" src="img/photo-1.jpg">
+            <img class="image" src="img/photo.jpg">
         </div>
         <div id="Contact">
             <h2 class="left-column">Contact</h2>
@@ -41,26 +47,26 @@
         <div id="Hobbies">
             <h2 class="left-column">Hobbies</h2>
             <div>
-                   
-                     <div class="icon-left">
-                        <i class="fas fa-bicycle"></i> 
+                <div class="icon-left">
+                        <i class="fas hobbies-icons fa-bicycle"></i> 
                     </div>
-                     <div class="icon-left"><i class="fas fa-camera"></i>
+                     <div class="icon-left"><i class="fas hobbies-icons fa-camera"></i>
                      </div>
-                     <div class="icon-left"><i class="fas fa-plane-departure"></i>
+                     <div class="icon-left"><i class="fas hobbies-icons fa-plane-departure"></i>
                      </div>
             </div>
         </div>
     </div>
-    <div class="right-side">
-        <div id="Name">
-            <h1>Antonino Arcudi</h1>
-            <h2 id="title">Web Developer</h2>
-            <hr class="head">
+    <div class="right-col">
+        <div class="name">
+            <h1><span class="first-name">Antonino</span>  Arcudi</h1>
+            <h2 id="job-title">Web Developer</h2>
+            <hr class="name-hr">
         </div>
+        
         <h2 class="right-column"><i class="fas icon-right fa-graduation-cap"></i> Education</h2>
-            <hr class="right-hr">
-        <div id="Education">
+            <hr>
+        <div class="right-content">
             <div class="left-main">
                 <ul>
                     <li>2019 - Present<br>Salamanca</li>
@@ -82,9 +88,9 @@
                         SEO, SEA, Email marketing, Inbound and content makrketing</p>
                 </div>
         </div>
-        <h2 class="right-column"><i class="fas  icon-right fa-briefcase"></i> Experience</h2>
-        <hr class="right-hr">
-        <div id="Experience">
+        <h2 class="right-column"><i class="fas icon-right fa-briefcase"></i> Experience</h2>
+        <hr>
+        <div class="right-content"> 
                 <div class="left-main">
                         <ul>
                             <li>2015 - Present<br>Salamanca</li>
@@ -96,7 +102,7 @@
                             Technical SEO Consultant for international website and e-commerce (fashion, cosmetics, B2B)
                             - Crawl - Indexation - On-page optimization, JS rendering recommendation
                             - Website migrations and backlinks analysis
-                            - Log analysis
+                            - Log analysis<br>
                             - Setup of analytics tools and reports of KPI's</p>
        
                     </div>
@@ -110,8 +116,8 @@
                             <p>Seo Specialist<br>
                                 Technical SEO Consultant for international website and e-commerce (fashion, cosmetics, B2B)
                                 Crawl,Indexation ,On-page optimization, JS rendering recommendation
-                                Website migrations and backlinks analysis
-                                Log analysis
+                                Website migrations and backlinks analysis<br>
+                                Log analysis<br>
                                 Setup of analytics tools and reports of KPI's</p>
            
                         </div>
@@ -122,22 +128,29 @@
                             </div>
                             <div class="right-main">
                                 <h3>Spanish School inc</h3>
-                                <p>Seo Writer<br>
+                                <p>Seo Writer
                                 Translator y copywriter SEO for donquijote.org, Keyword research, Writer for italian website</p>
                
                             </div>
         
         </div>
         <h2 class="right-column"><i class="fas icon-right fa-pencil-alt"></i> References</h2>
-        <hr class="right-hr">
-        <div id="References">
-                <div class="left-main">
-                        Reference One
+        <hr>
+        <div class="references">
+                <div>
+                        <h3>William Kieman</h3>
+                        <p>Director, Design Company LTD<br>
+                        Phone: 0123654<br>
+                        email: name@email.com</p>
+                </div>
+                    <div>
+                                    <h3>William Kieman</h3>
+                                    Director, Design Company LTD<br>
+                                    Phone: 0123654<br>
+                                    email: name@email.com<br>
+                                </div>
                     </div>
-                    <div class="right-main">
-                        Reference Two
-                    </div>
-            
+                </div>
         </div>
     </div>
 </div>
