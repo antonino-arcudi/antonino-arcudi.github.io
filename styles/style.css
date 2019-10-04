@@ -73,6 +73,7 @@ h2 {
 #job-title {
     text-transform: capitalize;
     font-size: 1.3em;
+    margin-bottom: 0em;
 
 }
 
