@@ -20,7 +20,8 @@ body {
 }
 
 .right-col {
-   padding-left: 2em; 
+   padding-left: 2em;
+   padding-right: 2em;
 }
 
 .hidden {
