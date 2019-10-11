@@ -14,70 +14,18 @@ body {
     margin: auto;
 }
 
+/* styles for the left column */
 .left-col {
     background-color: #81D4FA;
-    /* adding width */
 }
 
-.right-col {
-   padding-left: 2em;
-   padding-right: 2em;
+.name-mobile {
+    display:none;
 }
+
 a {
     color: black;
     text-decoration: none
-}
-.hidden {
-    display:none;
-} 
-
-.right-content {
-    display: grid;
-    grid-template-columns: 10em 27em;
-    gap: 0em 3em;
-}
-
-.name {
-    margin: 6em 0em 6em 0em;
-}
-hr {
-    color: #81D4FA;
-    height:1px; 
-    border:none;
-    color:#81D4FA; 
-    background-color:#81D4FA; 
-    width: 100%;
-
-}
-.first-name {
-    color: #81D4FA;
-}
-hr.name-hr {
-    text-align:left;
-    width:10%;
-    display: inline-block;
-}
-
-h1 {
-    text-align: left;
-    font-size: 3em;
-    font-weight: bold;
-    margin: 1.3em 0em 0em 0em;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    text-transform: uppercase;
-}
-h2 {
-    text-transform: uppercase;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.5em;
-    margin: 0.83em 0em;
-}
-
-#job-title {
-    text-transform: capitalize;
-    font-size: 1.3em;
-    margin-bottom: 0em;
-    
 }
 
 h2.left-column {
@@ -86,22 +34,6 @@ h2.left-column {
     color: #81D4FA;
     font-size: 1.2em;
     padding: 0.23em 0em 0.23em 0em;
-}
-
-h3 {
-    margin: 1.16em 0em;
-    text-transform: uppercase;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-p {
-    margin:1em 0;
-    font-size: 0.9em;
-}
-.left-p {
-    padding: 1.5em 1.5em 1.5em 1.5em;
-    text-align: justify;
-    font-size: 0.9em;
-    
 }
 #Photo {
     padding: 1.5em 1.5em 1.5em 1.5em;
@@ -130,15 +62,18 @@ p {
     text-align: center;
     margin: 1em 0.2em 1em;
 }
+
 .icon-right {
     color: #81D4FA;
 }
 
-ul {
-    margin: 1em 0em;
-    padding-left: 2.5em;
-    list-style: disc;
+.left-p {
+    padding: 1.5em 1.5em 1.5em 1.5em;
+    text-align: justify;
+    font-size: 0.9em;
+    
 }
+
 #About {
     height: 33em;
 } 
@@ -150,45 +85,153 @@ ul {
     padding-top: 0.3em;
 }
 
+/* styles for right column */
+.right-col {
+   padding-left: 2em;
+   padding-right: 2em;
+}
+
+.right-content {
+    display: grid;
+    grid-template-columns: 10em 27em;
+    gap: 0em 3em;
+}
+
+.name {
+    margin: 6em 0em 6em 0em;
+}
+
+hr {
+    color: #81D4FA;
+    height:1px; 
+    border:none;
+    color:#81D4FA; 
+    background-color:#81D4FA; 
+    width: 100%;
+
+}
+
+.first-name {
+    color: #81D4FA;
+}
+
+hr.name-hr {
+    text-align:left;
+    width:10%;
+    display: inline-block;
+}
+
+h1 {
+    text-align: left;
+    font-size: 3em;
+    font-weight: bold;
+    margin: 1.3em 0em 0em 0em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-transform: uppercase;
+}
+
+h2 {
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
+    margin: 0.83em 0em;
+}
+
+h3 {
+    margin: 1.16em 0em;
+    text-transform: uppercase;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.job-title {
+    text-transform: capitalize;
+    font-size: 1.3em;
+    margin-bottom: 0em;
+    
+}
+
+p {
+    margin:1em 0;
+    font-size: 0.9em;
+}
+
+ul  {
+    margin: 1em 0em;
+}
+
+li {  
+    list-style: none; 
+      
+}
+
+ul.n-item {
+    margin-top: 0.4em;
+}
+
+ul.n-item li::before {
+    color: #81D4FA;   
+    content: "\2022"; 
+    margin-right:0.4em;
+    font-size: 1.8em;
+    
+}
+
+.fa-bullseye {
+    font-size: 1em;
+    color: #81D4FA;
+    margin-right:0.6em;
+}
+
+.place {
+    margin-left: 1.5em;
+}
+
 .references {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
 }
 
-/*adding media queries for responsive for rest of website*/
+/* Adding media queries for responsive */
 @media screen and (max-width: 920px) {
-    .container {
-      display: flex;
-      flex-direction: column;
+
+    /* Setting flex for responsive*/
+    .container, .right-content, .name-mobile {
+    display: flex;
+    flex-direction: column;
     }
-   .right-content {
-       display: flex;
-       flex-direction: column;
-   }
-   .hidden {
-       display: flex;
-       flex-direction: column;
+    
+    /* Avoid h1 overlap on mobiles */
+    h1 {
+        line-height: 1;
     }
-    h1,#title {
+
+    /* Centering elements */
+    h1, .job-title, #title {
         text-align: center;
     }
+
+    /* setting margins for date, place and right content*/
+    .place {
+        margin-left: 0em;
+    }
+
     ul {
-        list-style: none;
-        margin: 0em 0em;
+        margin: 0.5em 0em;
         padding-left: 0em;
     }
+
+    .right-col {
+        margin-right: 2em;
+        }
+
+    /* set hiding ul fas icons, pseudo bullets and name section */
+   .fa-bullseye, .name-desktop, ul.n-item li::before   {
+        display:none;
+    }  
+
+    /* set height for About section */ 
     #About {
         height: auto;
     }
-    .hidden-1 {
-        display:none;
-    }
-#job-title {
-    text-align: center;
 }
-.right-col {
-    margin-right: 2em;
-}
-
-} 

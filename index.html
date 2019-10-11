@@ -2,24 +2,24 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>Antonino Arcudi Resume</title>
     <meta name="description" content="">
-    <link rel="stylesheet" href="styles/style.css">
     <script src="https://kit.fontawesome.com/b76a425899.js"></script>
+    <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
 <div class="container">
     <div class="left-col">
-        <!--- not showing on desktop -->
-            <div class="hidden" id="name">
+        <!--- Hiding this part for device with width > 920px  -->
+            <div class="name-mobile">
                     <h1>Antonino Arcudi</h1>
-                    <h2 id="job-title">Web Developer</h2>
+                    <h2 class="job-title"> Junior Web Developer</h2>
                     <hr class="name-hr">
                 </div>
         <div id="Photo">
-            <img class="image" src="img/photo.jpg">
+            <img class="image" src="img/photo.jpg" alt="Antonino Photo">
         </div>
-        <div id="Contact">
+        <div>
             <h2 class="left-column">Contact</h2>
                 <p class="left-p">
                     Address<br>Salamanca, Spain
@@ -58,18 +58,18 @@
         </div>
     </div>
     <div class="right-col">
-        <div class="name hidden-1">
-            <h1><span class="first-name">Antonino</span>  Arcudi</h1>
-            <h2 id="job-title">Web Developer</h2>
+        <div class="name-desktop name">
+            <h1><span class="first-name">Antonino</span> Arcudi</h1>
+            <h2 class="job-title">Junior Web Developer</h2>
             <hr class="name-hr">
         </div>
         
         <h2 class="right-column"><i class="fas icon-right fa-graduation-cap"></i> Education</h2>
             <hr>
         <div class="right-content">
-            <div class="left-main">
+            <div>
                 <ul>
-                    <li>2019 - Present<br>Salamanca</li>
+                    <li><i class="fas fa-bullseye"></i>2019 - Current<br><span class=place>Salamanca</span></li>
                 </ul> 
             </div>
             <div class="right-main">
@@ -77,9 +77,9 @@
                 <p>Junior Web Developer<br>
                 HTML, CSS, JS, Vue.js, Express</p>
             </div>
-            <div class="left-main">
-                    <ul>
-                        <li>2015 - 2016<br>Salamanca</li>
+            <div>
+                    <ul class="n-item">
+                        <li>2015 - 2016<br><span class=place>Salamanca</span></li>
                     </ul> 
                 </div>
                 <div class="right-main">
@@ -91,9 +91,9 @@
         <h2 class="right-column"><i class="fas icon-right fa-briefcase"></i> Experience</h2>
         <hr>
         <div class="right-content"> 
-                <div class="left-main">
+                <div>
                         <ul>
-                            <li>2015 - Present<br>Salamanca</li>
+                            <li><i class="fas fa-bullseye"></i>2015 - Current<br><span class=place>Salamanca</span></li>
                         </ul> 
                     </div>
                     <div class="right-main">
@@ -106,9 +106,9 @@
                             - Setup of analytics tools and reports of KPI's</p>
        
                     </div>
-                    <div class="left-main">
-                            <ul>
-                                <li>2015 - Present<br>Salamanca</li>
+                    <div>
+                            <ul class=n-item>
+                                <li>2015 - Current<br><span class=place>Salamanca</span></li>
                             </ul> 
                         </div>
                         <div class="right-main">
@@ -121,9 +121,9 @@
                                 Setup of analytics tools and reports of KPI's</p>
            
                         </div>
-                        <div class="left-main">
-                                <ul>
-                                    <li>2014 - 2015<br>Salamanca</li>
+                        <div>
+                                <ul class=n-item>
+                                    <li>2014 - 2015<br><span class=place>Salamanca</span></li>
                                 </ul> 
                             </div>
                             <div class="right-main">
@@ -148,9 +148,8 @@
                             <p>Director, Design Company LTD<br>
                             Phone: 0123654<br>
                             email: name@email.com</p>
-                                </div>
                     </div>
-                </div>
+
         </div>
     </div>
 </div>
