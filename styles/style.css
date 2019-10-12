@@ -35,7 +35,7 @@ h2.left-column {
     font-size: 1.2em;
     padding: 0.23em 0em 0.23em 0em;
 }
-#Photo {
+#photo {
     padding: 1.5em 1.5em 1.5em 1.5em;
 }
 
@@ -74,10 +74,10 @@ h2.left-column {
     
 }
 
-#About {
+#about {
     height: 33em;
 } 
-#Hobbies {
+#hobbies {
     text-align: center;
 }
 
