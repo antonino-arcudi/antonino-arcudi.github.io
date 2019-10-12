@@ -158,7 +158,9 @@ p {
     margin:0.4em 0;
     font-size: 0.9em;
 }
-
+.right-content__p {
+    font-size: 0.8em;
+}
 ul  {
     margin: 1em 0em;
 }
