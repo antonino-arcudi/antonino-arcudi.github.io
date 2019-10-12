@@ -113,6 +113,7 @@ hr {
 
 .first-name {
     color: #81D4FA;
+    font-weight: bold;
 }
 
 hr.name-hr {
@@ -124,7 +125,7 @@ hr.name-hr {
 h1 {
     text-align: left;
     font-size: 3em;
-    font-weight: bold;
+    font-weight: 100;
     margin: 1.3em 0em 0em 0em;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-transform: uppercase;
@@ -151,7 +152,6 @@ h3 {
     text-transform: capitalize;
     font-size: 1.3em;
     margin-bottom: 0em;
-    
 }
 
 p {
@@ -237,7 +237,7 @@ ul.n-item li::before {
     }  
 
     /* set height for About section */ 
-    #About {
+    #about {
         height: auto;
     }
 }
