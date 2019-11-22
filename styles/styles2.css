@@ -1,0 +1,61 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 1040px;
+  margin: auto;
+}
+
+.body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1em;
+  color: black;
+}
+
+.header {
+  display: flex;
+  flex: 1;
+}
+.header__img {
+  max-height: 15em;
+  border-radius: 50%;
+  border-color: #79C4FF;
+  border-style: solid;
+  border-width: 4px;
+  max-width: 100%;
+  margin: 0.3em 0.3em 0.3em 0.3em;
+}
+.header__h1 {
+  text-align: center;
+  margin: 0.3em 0em 0em 0em;
+  text-transform: uppercase;
+  flex-grow: 1;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 2em;
+  font-weight: 100;
+  color: black;
+}
+.header__h2 {
+  font-size: 1em;
+}
+
+.nav {
+  background-color: #81D4FA;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 2em;
+}
+
+.section {
+  background-color: gray;
+  flex: 1;
+  height: 800px;
+}
+
+.footer {
+  background-color: lightgrey;
+}
+
+/*# sourceMappingURL=styles2.css.map */

@@ -1,0 +1,81 @@
+$font: "'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;";
+$test-color: gray;
+$margin: auto;
+$height: 100px;
+$color-sec:  #81D4FA;
+$color-prim: white;
+
+@mixin font-sec {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 2em;
+    font-weight: 100;
+    color: black;
+}
+
+@mixin font-primary {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1em;
+    color: black;
+}
+@mixin flex-desktop {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 1040px;
+    margin: auto
+}
+@mixin flex-item {
+    display: flex;
+    flex: 1;
+    
+}
+.container  {
+    @include flex-desktop;
+}
+
+.body {
+    @include font-primary()
+}
+.header {
+    @include flex-item;
+        &__img {
+            max-height: 15em;
+            border-radius: 50%;
+            border-color: #79C4FF; 
+            border-style: solid;
+            border-width: 4px;
+            max-width: 100%;
+            margin: 0.3em 0.3em 0.3em 0.3em;
+        }
+        &__h1 {
+            text-align: center;
+            margin: 0.3em 0em 0em 0em;
+            text-transform: uppercase;
+            flex-grow:1;
+            @include font-sec;
+        }
+        &__h2 {
+            font-size: 1em;
+        }
+
+}
+
+.nav {
+    background-color: $color-sec;
+    color: $color-prim;
+    display: flex;
+    
+    justify-content: space-around;
+    align-items: center;
+    height: 2em;
+}
+
+.section {
+    background-color: $test-color;
+    flex: 1;
+    height: 800px;
+}
+
+.footer {
+    background-color: lightgrey;
+}

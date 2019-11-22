@@ -1,0 +1,22 @@
+{
+  "name": "index-v2.html",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass" : "sass --watch ./sass/main.scss:./styles/styles2.css",
+    "prefix": "postcss ./styles/styles2.css --use autoprefixer"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/antonino-arcudi/antonino-arcudi.github.io.git"
+  },
+  "author": "Antonino Arcudi",
+  "license": "ISC",
+  "browserlist": "last 4 versions",
+  "bugs": {
+    "url": "https://github.com/antonino-arcudi/antonino-arcudi.github.io/issues"
+  },
+  "homepage": "https://github.com/antonino-arcudi/antonino-arcudi.github.io#readme"
+}
