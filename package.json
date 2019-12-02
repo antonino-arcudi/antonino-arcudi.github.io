@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "sass" : "sass --watch ./sass/main.scss:./styles/styles2.css",
-    "prefix": "postcss ./styles/styles2.css --use autoprefixer"
+    "prefix": "postcss ./styles/styles2.css --use autoprefixer -d ./styles/styles2-prefixed.css"
   },
   "repository": {
     "type": "git",
@@ -14,7 +14,7 @@
   },
   "author": "Antonino Arcudi",
   "license": "ISC",
-  "browserlist": "last 4 versions",
+  "browserslist": "last 4 versions",
   "bugs": {
     "url": "https://github.com/antonino-arcudi/antonino-arcudi.github.io/issues"
   },
