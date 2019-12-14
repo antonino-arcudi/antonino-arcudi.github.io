@@ -4,7 +4,7 @@ $test-color: gray;
 $margin: auto;
 $height: 100px;
 $color-sec:  #81D4FA;
-$color-prim: white;
+$color-prim: whitesmoke;
 
 @mixin font-sec {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -36,15 +36,93 @@ html {
 body {
     
     @include font-primary();
-    background-color: lightyellow;
+    background-color: $color-prim;
     
 }
+
+  @-webkit-keyframes bounce {
+    0%, 20%, 53%, 80%, 100% {
+      -webkit-transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+      transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+      -webkit-transform: translate3d(0,0,0);
+      transform: translate3d(0,0,0);
+    }
+  
+    40%, 43% {
+      -webkit-transition-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+      transition-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+      -webkit-transform: translate3d(0, -30px, 0);
+      transform: translate3d(0, -30px, 0);
+    }
+  
+    70% {
+      -webkit-transition-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+      transition-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+      -webkit-transform: translate3d(0, -15px, 0);
+      transform: translate3d(0, -15px, 0);
+    }
+  
+    90% {
+      -webkit-transform: translate3d(0,-4px,0);
+      transform: translate3d(0,-4px,0);
+    }
+  }
+  
+  @keyframes bounce {
+    0%, 20%, 53%, 80%, 100% {
+      -webkit-transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+      transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+      -webkit-transform: translate3d(0,0,0);
+      transform: translate3d(0,0,0);
+    }
+  
+    40%, 43% {
+      -webkit-transition-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+      transition-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+      -webkit-transform: translate3d(0, -30px, 0);
+      transform: translate3d(0, -30px, 0);
+    }
+  
+    70% {
+      -webkit-transition-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+      transition-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+      -webkit-transform: translate3d(0, -15px, 0);
+      transform: translate3d(0, -15px, 0);
+    }
+  
+    90% {
+      -webkit-transform: translate3d(0,-4px,0);
+      transform: translate3d(0,-4px,0);
+    }
+  }
+  
+  .bounce {
+    -webkit-animation-name: bounce;
+    animation-name: bounce;
+    -webkit-transform-origin: center bottom;
+    transform-origin: center bottom;
+  }
+  
+  .animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+  }
+  .responsive {
+    width: 100%;
+    height: auto;
+  }
+  
 .wrapper  {
     @include flex-desktop;
     max-width: 1040px;
     flex:1;
     &__section {
     flex-direction: column;
+    }
+    &__pf {
+    flex-wrap: wrap;
     }
 }
 .header {
@@ -58,6 +136,7 @@ body {
             max-width: 100%;
             margin: 0.3em 0.3em 0.3em 0.3em;
         }
+        
         &__h1 {
             text-align: center;
             margin: 1.3em 0em 0em 0em;
@@ -66,6 +145,7 @@ body {
             @include font-sec;
             text-transform: uppercase;
         }
+
         &__h2 {
             text-transform: uppercase;
         }
@@ -79,6 +159,7 @@ body {
     justify-content: space-around;
     align-items: center;
     height: 2em;  
+    box-shadow: 0 3px 5px -1px rgba(0,0,0,0.4);
 }
 
 .section {
@@ -92,6 +173,24 @@ body {
     }
 }
 
+.pf {
+    border:1px solid black;
+    height: 350px;
+    width:400px;
+    background-color: whitesmoke;
+    box-shadow: 0 10px 6px -6px #777;
+    margin: 1em;
+    &__h2 {
+        font-weight: 500;
+        @include font-sec;
+        text-align: center;
+    }
+    &__img  {
+            display: block;
+            margin: 0.7em 0.7em 0.7em;
+    }
+
+}
 .footer {
     background-color: lightgrey;
 }
