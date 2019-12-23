@@ -2,28 +2,77 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Antonino Arcudi Porfolio</title>
-    <link rel="stylesheet" href="styles/styles2.css">
+    <title>Antonino Arcudi Resume</title>
+    <meta name="description" content="Here you can find my Online Resume. Hire me now!">
+    <meta name="robots" content="noindex, nofollow">
+    <script src="https://kit.fontawesome.com/b76a425899.js"></script>
+    <link rel="stylesheet" href="styles/restyle.css">
 </head>
 <body>
-        <div class="header">
-                <div class="wrapper">
-                <div>
-                        <img class="header__img bounce animated" src="img/photo.jpg" alt="Antonino Photo">
-                </div>
-                <div class="header__h1">
-                    <h1>Antonino Arcudi</h1>
-                    <h2 class="header__h2"> Junior Web Developer</h2>
-                </div>
-            </div>
-            </div>
-            <nav class="nav">
-                <a href="./index-1.html">About me</a>
-                <a href="./education.html">Education</a>
-                <a href="./experience.html">Experience</a>
-                <a href="./portfolio.html">Portfolio</a>
-            </nav>
+<div class="wrapper flex">
 
+    <div class="left-col flex1">
+        <!--- Hiding this part for device with width > 920px  -->
+        <div class="name-mobile">
+            <h1>Antonino Arcudi</h1>
+            <h2 class="job-title"> Junior Web Developer</h2>
+            <hr class="header__hr">
+        </div>
+        <img class="image bounce animated" src="img/photo.jpg" alt="Antonino Photo">
+        <div>
+            <h2 class="left__h2">Contact</h2>
+            <p class="left-p">
+            <i class="fas fa-map-marked-alt"></i>  Salamanca, Spain
+            <br>
+            <br>
+            <i class="fas fa-phone-alt"></i>  +34 123456
+            <br>
+            <br>
+            <i class="far fa-envelope"></i>  antonino.arcudi@gmail.com
+            <br>
+            <br>
+            <i class="fas fa-desktop"></i><a href=https://www.linkedin.com/antoninoarcudi target="_blank"> https://www.linkedin.com/antoninoarcudi</a>
+            <br>
+            <br>
+            <i class="fab fa-skype"></i>  @antoninoarcudi
+            </p>
+        </div>
+        <div id="about">
+            <h2 class="left__h2">About Me</h2>
+            <p class="left-p">I have a master's Degree in translation and a passion for Internet and the code. 
+                I found my place in the SEO world: here I can take advantage of my semantic knowledge and of my code skills. 
+                Always looking for constant improvement, I can't stop from learning and thinking out of the box</p>
+        </div>
+        <div id="hobbies">
+            <h2 class="left__h2">Hobbies</h2>
+            <div>
+                <div class="icon-left">
+                    <i class="fas hobbies-icons fa-bicycle"></i> 
+                </div>
+                <div class="icon-left"><i class="fas hobbies-icons fa-camera"></i>
+                </div>
+                <div class="icon-left"><i class="fas hobbies-icons fa-plane-departure"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="right-col flex2">
+        <div class="name-desktop header">
+            <h1 class="header__h1"><span class="first-name ">Antonino</span> Arcudi</h1>
+            <h2 class="header__h2">Junior Web Developer</h2>
+            <hr class="header__hr">
+        </div>
+                <nav class="nav">
+                    <label for="hamburger">&#9776;</label>
+                    <input type="checkbox" id="hamburger" />
+                    <ul class="menu">
+                        <li class=""><a href="./reindex.html">Top</a>
+                        <li class=""><a href="#Education">Education</a></li>
+                        <li class=""><a href="#Experience">Experience</a></li>
+                        <li class=""><a href="./portfolio.html">Portfolio</a></li>
+
+                       </ul>
+                       </nav>
     <div class="wrapper wrapper__pf">
 <div class="pf">
     <img class="pf__img" src="img/webpage.jpg">
@@ -50,21 +99,5 @@
                 <h3 class="pf__h3"><i>Website 6</i> </h3>
             </div>
 </div>
-<footer class="footer">
-    <div class="references">
-        <div>
-            <h3>William Kieman</h3>
-            <p>Director, Design Company LTD<br>
-            Phone: 0123654<br>
-            email: name@email.com</p>
-        </div>
-        <div>
-            <h3>William Kieman</h3>
-            <p>Director, Design Company LTD<br>
-            Phone: 0123654<br>
-            email: name@email.com</p>
-        </div>
-    </div>
-</footer>
 </body>
 </html>
