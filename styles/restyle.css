@@ -147,6 +147,7 @@ body {
   width: 24%;
   text-align: center;
   display: inline-block;
+  margin-top: 0.2em;
 }
 .nav > ul > li > a {
   text-decoration: none;
@@ -339,6 +340,10 @@ ul.n-item li::before {
   flex-basis: 50%;
 }
 
+.hobbies {
+  text-align: center;
+}
+
 /* portfolio css */
 .pf {
   border: 1px solid black;
@@ -404,7 +409,9 @@ ul.n-item li::before {
 
   /* menu */
   .nav {
-    background-color: whitesmoke;
+    margin-right: -4em;
+    height: 2.5em;
+    background-color: white;
   }
 
   .nav label {
@@ -420,13 +427,13 @@ ul.n-item li::before {
   .nav ul li {
     display: block;
     width: 100%;
-    background-color: whitesmoke;
     margin-bottom: 0.3em;
   }
 
   /* Toggle show/hide menu on checkbox click */
   .nav ul {
     display: none;
+    background-color: white;
   }
 
   .nav input:checked ~ ul {
