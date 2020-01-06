@@ -370,6 +370,7 @@ ul.n-item li::before {
     box-shadow: 0 3px 5px -1px rgba(0,0,0,0.4); 
     margin-right: none;
     background-color: white;
+    height: 2.6em;
     & br {
         display:none;
     }
@@ -381,7 +382,7 @@ ul.n-item li::before {
         text-transform: uppercase;
         display:inline-block;
         vertical-align: middle;
-        padding: 3%;
+        line-height: 1;
     }
     &__h2 {
         display:none;
