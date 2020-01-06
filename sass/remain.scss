@@ -4,7 +4,8 @@ $font: "'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;";
 $margin: auto;
 $height: 100px;
 $color-sec:  #81D4FA;
-$darker-color-sec: darken( $color-sec, 5% );
+$color-ter: #129680;
+$darker-color-sec: darken( $color-ter, 5% );
 $color-prim: white;
 
 @mixin font-sec {
@@ -85,10 +86,6 @@ body {
     @include font-primary;
 }
 
-section {
-    margin-bottom: 2em;
-}
-
 .wrapper  {
     max-width: 1000px;
     margin: auto;
@@ -106,10 +103,11 @@ section {
 .left-column {
     flex-basis: 33%;
     background-image: url("../img/bg.jpg");
+    background-attachment: fixed;
     min-height:100vh;
     display: flex;
     flex-direction: column;
-    justify-content:center;
+    /*justify-content:center; */
 }
 
 .bounce {
@@ -133,17 +131,20 @@ section {
 .nav {
     text-align:center;
     line-height: 1;
-    box-shadow: 0 3px 5px -1px rgba(0,0,0,0.4); 
+
+/*    box-shadow: 0 3px 5px -1px rgba(0,0,0,0.4); */
     &__h1 {
         font-size: 2em;
         font-weight: 100;
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         text-transform: uppercase;
+        color: $color-prim;
     }
     &__h2 {
         text-transform: capitalize;
         font-size: 1.3em;
         font-family: Arial, Helvetica, sans-serif;
+        color: $color-prim;
     }
     & > ul {
         list-style-type: none;
@@ -156,11 +157,14 @@ section {
         }
         & > li > a {
             text-decoration: none;
-            font-size:1.3em;
+            text-transform: uppercase;
+            padding: 0.2em 0.2em 0.2em 0.2em;
+            font-weight: bold;
+            /*font-size:1.3em;*/
             display:block;
             color:$color-prim;
             &:hover {
-                background-color: lightskyblue;
+                background-color: $color-ter;
             }          
         }
     }
@@ -181,7 +185,7 @@ section {
 }
 
 .icon-right {
-    color: #81D4FA;
+    color: $color-ter;
 }
 
 /* styles for right column */
@@ -192,14 +196,14 @@ section {
    min-height:100vh;
    display: flex;
    flex-direction: column;
-   justify-content:center;
+ /*  justify-content:center; */
 }
 
 hr {
     height:1px; 
     border:none;
-    color:#81D4FA; 
-    background-color:#81D4FA; 
+    color: $color-ter; 
+    background-color: $color-ter; 
     width: 100%; 
 }
 
@@ -207,7 +211,10 @@ hr {
     color: #81D4FA;
     font-weight: bold;
 }
-
+section {
+margin-top: 3em;
+margin-bottom: 1em;
+}
 .section {
     &__left {
         flex-basis: 30%;
@@ -251,7 +258,7 @@ ul.n-item {
 }
 
 ul.n-item li::before {
-    color: #81D4FA;   
+    color: $color-ter;   
     content: "\2022"; 
     margin-right:0.4em;
     font-size: 1.8em;
@@ -260,7 +267,7 @@ ul.n-item li::before {
 
 .fa-bullseye {
     font-size: 1em;
-    color: #81D4FA;
+    color: $color-ter;
     margin-right:0.6em;
 }
 
@@ -276,6 +283,8 @@ ul.n-item li::before {
 }
 
 .hobbies {
+    display: flex;
+    justify-content: space-between;
     text-align:center;
 }
 
@@ -288,7 +297,7 @@ ul.n-item li::before {
     margin: 1em;
     transition: 0.4s;
     &:hover {
-        transform: scale(1.5); 
+        transform: scale(1.15); 
     }
     &__h3 {
         font-weight: 500;
@@ -303,6 +312,7 @@ ul.n-item li::before {
 }
 
 /* Adding media queries for responsive */
+
 @media screen and (max-width: 920px) {
 
     /* Setting flex for responsive*/
@@ -369,6 +379,7 @@ ul.n-item li::before {
         font-size: 1em;
         font-weight: 100;
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        color: $color-ter;
         text-transform: uppercase;
         display:inline-block;
         vertical-align: middle;
@@ -405,8 +416,7 @@ ul.n-item li::before {
             display:block;
             color:black;
             &:hover {
-            background-color: lightskyblue;
-            }          
+            background-color:$color-ter;           }          
         }
     }
 }
@@ -419,3 +429,10 @@ ul.n-item li::before {
     background-color: white;
   }
 }
+.first-name {
+    color: $color-ter;
+}
+
+/* check ipad version */
+/* check nav bar on ipad */
+/* justify between icons hobbies with a line of text */
