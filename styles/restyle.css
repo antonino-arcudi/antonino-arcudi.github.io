@@ -140,6 +140,7 @@ body {
   /*    box-shadow: 0 3px 5px -1px rgba(0,0,0,0.4); */
 }
 .nav__h1 {
+  line-height: 1.2;
   font-size: 2em;
   font-weight: 100;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
@@ -149,6 +150,7 @@ body {
 .nav__h2 {
   text-transform: capitalize;
   font-size: 1.3em;
+  font-weight: 200;
   font-family: Arial, Helvetica, sans-serif;
   color: white;
 }
@@ -165,9 +167,9 @@ body {
 .nav > ul > li > a {
   text-decoration: none;
   text-transform: uppercase;
-  padding: 0.2em 0.2em 0.2em 0.2em;
+  padding: 0.4em 0.2em 0.4em 0.2em;
   font-weight: bold;
-  /*font-size:1.3em;*/
+  font-size: 1.2em;
   display: block;
   color: white;
 }
@@ -201,7 +203,7 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  /*  justify-content:center; */
+  justify-content: center;
 }
 
 hr {
@@ -388,7 +390,7 @@ ul.n-item li::before {
     text-transform: uppercase;
     display: inline-block;
     vertical-align: middle;
-    line-height: 1;
+    line-height: 2.6em;
   }
   .nav__h2 {
     display: none;
@@ -402,7 +404,7 @@ ul.n-item li::before {
     background: #0f7f6d;
     font-style: normal;
     font-size: 1.2em;
-    padding: 10px;
+    padding: 11px;
     float: right;
   }
   .nav > ul {
@@ -435,9 +437,9 @@ ul.n-item li::before {
     background-color: white;
   }
 }
+/* portfolio, choose images, add text */
+/* animation to menu */
 /* check ipad version */
 /* check nav bar on ipad */
-/* spacing menu text */
-/* removing span*/
 
 /*# sourceMappingURL=restyle.css.map */
