@@ -420,7 +420,7 @@ ul.n-item li::before {
   }
   .nav > ul > li > a {
     text-decoration: none;
-    font-size: 1.3em;
+    font-size: 0.8em;
     display: block;
     color: black;
   }
