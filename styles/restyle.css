@@ -410,7 +410,8 @@ ul.n-item li::before {
   .nav > ul {
     list-style-type: none;
     display: none;
-    padding: 0;
+    padding-bottom: 0.8em;
+    border-bottom: 1px #d0d0d0;
   }
   .nav > ul > li {
     width: 100%;

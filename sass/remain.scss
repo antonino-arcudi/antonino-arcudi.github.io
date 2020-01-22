@@ -404,7 +404,8 @@ ul.n-item li::before {
     & > ul {
         list-style-type: none;
         display: none;
-        padding: 0;
+        padding-bottom: 0.8em;
+        border-bottom: 1px #d0d0d0;
         & > li {
             width: 100%;
             display: block;
