@@ -167,9 +167,9 @@ body {
 .nav > ul > li > a {
   text-decoration: none;
   text-transform: uppercase;
-  padding: 0.4em 0.2em 0.4em 0.2em;
+  padding: 0.5em 0.2em 0.5em 0.2em;
   font-weight: bold;
-  font-size: 1.2em;
+  font-size: 1em;
   display: block;
   color: white;
 }
