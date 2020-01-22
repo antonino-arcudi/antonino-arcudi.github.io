@@ -568,7 +568,6 @@ ul.n-item li::before {
   .content {
     margin-right: 0px;
     justify-content: flex-start;
-    align-items: center;
   }
 }
 /* portfolio, choose images, add text */
