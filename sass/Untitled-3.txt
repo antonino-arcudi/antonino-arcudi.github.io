@@ -1,0 +1,99 @@
+@media screen and (max-width: 961px) {
+    .wrapper {
+        flex-direction: column;
+        &__section {
+        display:block;
+            }
+        }
+        .left-column {
+           min-height: 1px;
+           position: sticky;
+           top: 0;
+           background-image: none;
+        }
+        .section__right {
+           margin-bottom: 0.5em;
+        }
+        li > br {
+            display: none;
+          }
+        ul {
+            margin: 0.5em 0em;
+            padding-left: 0em;
+        }
+    
+        h3 {
+            margin: 0em 0em 0em 0em;
+        }
+    
+        .image {
+            border-width: 1px;
+            height: 2em;
+            margin: 0.2em 0.2em 0.2em 0.2em;
+            float: left;
+        }
+    
+        /* set hiding ul fas icons, pseudo bullets and name section */
+       .fa-bullseye, .name-desktop, ul.n-item li::before   {
+            display:none;
+        } 
+    
+      .nav {
+        position: sticky;
+        top: 0;
+        box-shadow: 0 3px 5px -1px rgba(0,0,0,0.4); 
+        margin-right: 0px;
+        background-color: white;
+        height: 2.6em;
+        & br {
+            display:none;
+        }
+        &__h1 {
+            font-size: 1em;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            color: $color-ter;
+            display:inline-block;
+            vertical-align: middle;
+            line-height: 2.6em;
+        }
+        &__h2 {
+            display:none;
+        }
+        & label {
+            display: block;
+            color: #fff;
+            background:$darker-color-sec;
+            font-style: normal;
+            font-size: 1.8rem;
+            padding: 11px;
+            float: right;
+            }
+        & > ul {
+            display: none;
+            padding: 0;
+            margin:0em 0em 0em 0em;
+            & > li {
+                width: 100%;
+            }
+            & > li > a {
+                font-size: 0.8em;
+                color:black;
+                &:hover {
+                    @include hover-animation()        }          
+            }
+        }
+    }
+    .nav input:checked ~ ul {
+        display: block;
+      }
+    
+    .nav ul {
+        display: none;
+        background-color: white;
+      }
+      .content {
+          margin-right:0px;
+          justify-content: flex-start;
+          min-height: 0;
+      }
+    }   

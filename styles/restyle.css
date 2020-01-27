@@ -79,6 +79,17 @@ a img {
     transform: translate3d(0, -4px, 0);
   }
 }
+@keyframes animation-menu {
+  100% {
+    background-color: #129680;
+  }
+}
+@keyframes animation-menu-resp {
+  100% {
+    background-color: #129680;
+    color: white;
+  }
+}
 html {
   scroll-behavior: smooth;
 }
@@ -88,10 +99,10 @@ body {
   font-size: 1.2em;
   color: black;
   line-height: 1.4;
+  min-width: 320px;
 }
 
 .wrapper {
-  max-width: 1000px;
   margin: auto;
   display: flex;
 }
@@ -104,14 +115,13 @@ body {
   display: flex;
 }
 
-.left-column {
-  flex-basis: 33%;
+.navigation {
+  flex-basis: 30%;
   background-image: url("../img/bg.jpg");
   background-attachment: fixed;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  /*justify-content:center; */
 }
 
 .bounce {
@@ -137,7 +147,6 @@ body {
   line-height: 1;
   position: sticky;
   top: 40px;
-  /*    box-shadow: 0 3px 5px -1px rgba(0,0,0,0.4); */
 }
 .nav__h1 {
   line-height: 1.2;
@@ -174,7 +183,11 @@ body {
   color: white;
 }
 .nav > ul > li > a:hover {
-  background-color: #129680;
+  -webkit-animation-name: animation-menu;
+  -webkit-animation-duration: 0, 5s;
+  animation-name: animation-menu;
+  animation-duration: 0.8s;
+  animation-fill-mode: forwards;
 }
 
 .image {
@@ -195,11 +208,11 @@ body {
   color: #129680;
 }
 
-/* styles for right column */
+/* styles for the navigation */
 .content {
   padding-left: 2em;
   padding-right: 2em;
-  flex-basis: 66%;
+  flex-basis: 65%;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -230,7 +243,6 @@ section {
   text-transform: uppercase;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1.5em;
-  /* margin: 0.83em 0em; */
 }
 
 h3 {
@@ -243,16 +255,8 @@ p {
   font-size: 0.9em;
 }
 
-.right-content__p {
-  font-size: 0.8em;
-}
-
 ul {
   margin: 1em 0em;
-}
-
-li {
-  list-style: none;
 }
 
 ul.n-item {
@@ -274,13 +278,6 @@ ul.n-item li::before {
 
 .place {
   margin-left: 1.5em;
-}
-
-.refs {
-  display: flex;
-}
-.refs > div {
-  flex-basis: 50%;
 }
 
 .hobbies {
@@ -307,6 +304,7 @@ ul.n-item li::before {
   font-size: 1.5em;
   font-weight: 100;
   color: black;
+  font-size: 1em;
   text-align: center;
 }
 .pf__img {
@@ -315,266 +313,124 @@ ul.n-item li::before {
 }
 
 /* Adding media queries for responsive */
-@media screen and (max-width: 920px) {
-  /* Setting flex for responsive*/
+@media screen and (max-width: 961px) {
   .wrapper {
-    display: flex;
     flex-direction: column;
   }
   .wrapper__section {
     display: block;
   }
 
-  .left-column {
+  .navigation {
     min-height: 1px;
     position: sticky;
     top: 0;
     background-image: none;
-  }
-
-  .section__right {
-    margin-bottom: 0.5em;
-  }
-
-  li > br {
-    display: none;
-  }
-
-  ul {
-    margin: 0.5em 0em;
-    padding-left: 0em;
-  }
-
-  .content {
-    margin-right: 0px;
-  }
-
-  h3 {
-    margin: 0em 0em 0em 0em;
-    text-transform: uppercase;
-  }
-
-  .image {
-    border-radius: 50%;
-    border-color: #0f7f6d;
-    border-style: solid;
-    border-width: 1px;
-    height: 2em;
-    max-width: 100%;
-    margin: 0.2em 0.2em 0.2em 0.2em;
-    display: block;
-    float: left;
-  }
-
-  /* set hiding ul fas icons, pseudo bullets and name section */
-  .fa-bullseye, .name-desktop, ul.n-item li::before {
-    display: none;
-  }
-
-  .nav {
-    position: sticky;
-    top: 0;
-    box-shadow: 0 3px 5px -1px rgba(0, 0, 0, 0.4);
-    margin-right: 0px;
-    background-color: white;
-    height: 2.6em;
-  }
-  .nav br {
-    display: none;
-  }
-  .nav__h1 {
-    font-size: 1em;
-    font-weight: 100;
-    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-    color: #129680;
-    text-transform: uppercase;
-    display: inline-block;
-    vertical-align: middle;
-    line-height: 2.6em;
-  }
-  .nav__h2 {
-    display: none;
-    text-transform: capitalize;
-    font-size: 1.3em;
-    font-family: Arial, Helvetica, sans-serif;
-  }
-  .nav label {
-    display: block;
-    color: #fff;
-    background: #0f7f6d;
-    font-style: normal;
-    font-size: 1.8rem;
-    padding: 11px;
-    float: right;
-  }
-  .nav > ul {
-    list-style-type: none;
-    display: none;
-    padding-bottom: 0.8em;
-    border-bottom: 1px #d0d0d0;
-  }
-  .nav > ul > li {
-    width: 100%;
-    display: block;
-    text-align: center;
-    display: block;
-  }
-  .nav > ul > li > a {
-    text-decoration: none;
-    font-size: 0.8em;
-    display: block;
-    color: black;
-  }
-  .nav > ul > li > a:hover {
-    background-color: #129680;
-  }
-
-  .nav input:checked ~ ul {
-    display: block;
-  }
-
-  .nav ul {
-    display: none;
-    background-color: white;
-  }
-
-  .refs {
-    display: flex;
-  }
-  .refs > div {
-    flex-basis: 100%;
-  }
-}
-@media screen and (min-width: 481px) and (max-width: 961px) {
-  .wrapper {
-    display: flex;
-    flex-direction: column;
-  }
-  .wrapper__section {
-    display: block;
-  }
-
-  .left-column {
-    min-height: 1px;
-    position: sticky;
-    top: 0;
-    background-image: none;
-  }
-
-  .section__right {
-    margin-bottom: 0.5em;
-  }
-
-  li > br {
-    display: none;
-  }
-
-  ul {
-    margin: 0.5em 0em;
-    padding-left: 0em;
-  }
-
-  .content {
-    margin-right: 0px;
-  }
-
-  h3 {
-    margin: 0em 0em 0em 0em;
-    text-transform: uppercase;
-  }
-
-  .image {
-    border-radius: 50%;
-    border-color: #0f7f6d;
-    border-style: solid;
-    border-width: 1px;
-    height: 2em;
-    max-width: 100%;
-    margin: 0.2em 0.2em 0.2em 0.2em;
-    display: block;
-    float: left;
-  }
-
-  /* set hiding ul fas icons, pseudo bullets and name section */
-  .fa-bullseye, .name-desktop, ul.n-item li::before {
-    display: none;
-  }
-
-  .nav {
-    position: sticky;
-    top: 0;
-    box-shadow: 0 3px 5px -1px rgba(0, 0, 0, 0.4);
-    margin-right: 0px;
-    background-color: white;
-    height: 2.6em;
-  }
-  .nav br {
-    display: none;
-  }
-  .nav__h1 {
-    font-size: 1em;
-    font-weight: 100;
-    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-    color: #129680;
-    text-transform: uppercase;
-    display: inline-block;
-    vertical-align: middle;
-    line-height: 2.6em;
-  }
-  .nav__h2 {
-    display: none;
-    text-transform: capitalize;
-    font-size: 1.3em;
-    font-family: Arial, Helvetica, sans-serif;
-  }
-  .nav label {
-    display: block;
-    color: #fff;
-    background: #0f7f6d;
-    font-style: normal;
-    font-size: 1.8rem;
-    padding: 11px;
-    float: right;
-  }
-  .nav > ul {
-    list-style-type: none;
-    display: none;
-    padding: 0;
-  }
-  .nav > ul > li {
-    width: 100%;
-    display: block;
-    text-align: center;
-    display: block;
-  }
-  .nav > ul > li > a {
-    text-decoration: none;
-    font-size: 0.8em;
-    display: block;
-    color: black;
-  }
-  .nav > ul > li > a:hover {
-    background-color: #129680;
-  }
-
-  .nav input:checked ~ ul {
-    display: block;
-  }
-
-  .nav ul {
-    display: none;
-    background-color: white;
   }
 
   .content {
     margin-right: 0px;
     justify-content: flex-start;
+    min-height: 0;
+  }
+
+  .section__right {
+    margin-bottom: 0.5em;
+  }
+
+  li > br {
+    display: none;
+  }
+
+  ul {
+    margin: 0.5em 0em;
+    padding-left: 0em;
+  }
+
+  h3 {
+    margin: 0em 0em 0em 0em;
+  }
+
+  .image {
+    border-width: 1px;
+    height: 2em;
+    margin: 0.2em 0.2em 0.2em 0.2em;
+    float: left;
+  }
+
+  /* set hiding ul fas icons, pseudo bullets and name section */
+  .fa-bullseye, .name-desktop, ul.n-item li::before {
+    display: none;
+  }
+
+  .nav {
+    position: sticky;
+    top: 0;
+    box-shadow: 0 3px 5px -1px rgba(0, 0, 0, 0.4);
+    margin-right: 0px;
+    background-color: white;
+    height: 2.6em;
+  }
+  .nav br {
+    display: none;
+  }
+  .nav__h1 {
+    font-size: 1em;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    color: #129680;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 2.6em;
+  }
+  .nav__h2 {
+    display: none;
+  }
+  .nav label {
+    display: block;
+    color: #fff;
+    background: #0f7f6d;
+    font-style: normal;
+    font-size: 1.8rem;
+    padding: 11px;
+    float: right;
+  }
+  .nav > ul {
+    display: none;
+    background-color: white;
+    padding-bottom: 0.8em;
+    border-bottom: 3px solid #d0d0d0;
+    margin: 0em 0em 0em 0em;
+  }
+  .nav > ul > li {
+    width: 100%;
+  }
+  .nav > ul > li > a {
+    font-size: 0.8em;
+    color: black;
+  }
+  .nav > ul > li > a:hover {
+    -webkit-animation-name: animation-menu;
+    -webkit-animation-duration: 0, 5s;
+    animation-name: animation-menu;
+    animation-duration: 0.8s;
+    animation-fill-mode: forwards;
+  }
+
+  .nav input:checked ~ ul {
+    display: block;
   }
 }
+@media screen and (max-width: 920px) {
+  /*  .content {
+          padding-left: 2em;
+          padding-right: 2em;
+          display: flex;
+          flex-direction: column;
+      }
+  */
+}
 /* portfolio, choose images, add text */
-/* animation to menu */
-/* check ipad version */
-/* check nav bar on ipad */
-/* increase font sixe */
+/* adding lines description */
+/* clean the code!*/
 
 /*# sourceMappingURL=restyle.css.map */
