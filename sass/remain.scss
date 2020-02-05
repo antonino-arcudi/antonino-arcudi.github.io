@@ -294,10 +294,9 @@ ul.n-item li::before {
 
 /* portfolio css */
 .pf {
-    border:1px solid black;
-    width: 277px;
+    width: 250px;
+    padding: 1.2em;
     background-color: whitesmoke;
-    box-shadow: 0 10px 6px -6px #777;
     margin: 1em;
     transition: 0.4s;
     &:hover {
@@ -308,21 +307,35 @@ ul.n-item li::before {
         @include font-sec;
         font-size: 1em;
         text-align: center;
+        text-transform: capitalize;
     }
     &__img  {
             display: block;
-            margin: 0.7em 0.7em 0.7em;
+            margin: 0em 0em 0.7em 0em;
+            text-align: center;
+            height: 150px;
+            max-width: 245px;
+            box-shadow: 0 5px 3px -3px #aaa;
+    }
+    &__p {
+        text-align: center;
+        margin: 0em;
+        font-size: 0.8em;
     }
 
 }
 
-/* Adding media queries for responsive */
 @media screen and (max-width: 961px) {
     .wrapper {
         flex-direction: column;
         &__section {
         display:block;
             }
+        &__pf {
+            flex-direction: row;
+            flex-wrap: wrap;
+
+        }    
         }
         .navigation {
            min-height: 1px;
@@ -423,8 +436,7 @@ ul.n-item li::before {
             flex-direction: column;
         }
     */
-    
      }
-/* portfolio, choose images, add text */
-/* adding lines description */
 /* clean the code!*/
+/* sent before friday */
+/* prepare presentation */
