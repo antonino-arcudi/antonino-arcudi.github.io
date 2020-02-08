@@ -189,6 +189,9 @@ body {
   animation-duration: 0.8s;
   animation-fill-mode: forwards;
 }
+.nav__li--active {
+  background-color: #129680;
+}
 
 .image {
   border-radius: 50%;
@@ -348,6 +351,15 @@ ul.n-item li::before {
 
   .section__right {
     margin-bottom: 0.5em;
+    margin-left: 1.5em;
+  }
+
+  .hobbies {
+    flex-wrap: wrap;
+  }
+
+  .hobbies > div {
+    padding: 0.4em 0.4em;
   }
 
   li > br {
@@ -370,9 +382,8 @@ ul.n-item li::before {
     float: left;
   }
 
-  /* set hiding ul fas icons, pseudo bullets and name section */
-  .fa-bullseye, .name-desktop, ul.n-item li::before {
-    display: none;
+  .place {
+    display: block;
   }
 
   .nav {
@@ -441,8 +452,7 @@ ul.n-item li::before {
       }
   */
 }
-/* clean the code!*/
-/* sent before friday */
-/* prepare presentation */
+/* sass commet use of*/
+/* html semantinc */
 
-/*# sourceMappingURL=restyle.css.map */
+/*# sourceMappingURL=styles.css.map */

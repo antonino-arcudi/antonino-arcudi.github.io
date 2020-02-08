@@ -1,14 +1,12 @@
 {
-  "name": "index-v2.html",
+  "name": "index.html",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "sass" : "sass --watch ./sass/main.scss:./styles/styles2.css",
-    "prefix": "postcss ./styles/styles2.css --use autoprefixer -d ./styles/styles2-prefixed.css",
-    "sass1" : "sass --watch ./sass/remain.scss:./styles/restyle.css",
-    "prefix": "postcss ./styles/restyles.css --use autoprefixer -d ./styles/restyle-prefixed.css"
+    "sass" : "sass --watch ./sass/main.scss:./styles/styles.css",
+    "prefix": "postcss ./styles/styles.css --use autoprefixer -d ./styles/restyle-prefix.css"
   },
   "repository": {
     "type": "git",

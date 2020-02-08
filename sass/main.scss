@@ -1,12 +1,9 @@
 /* resetting default browser css rules */
 html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent;}body{line-height:1;}ol,ul{list-style:none;}blockquote,q{quotes:none;}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none;}a img{border:none;}
-$font: "'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;";
-$margin: auto;
-$height: 100px;
-$color-sec:  #81D4FA;
-$color-ter: #129680;
-$darker-color-sec: darken( $color-ter, 5% );
 $color-prim: white;
+$color-sec: #129680;
+$darker-color-sec: darken( $color-sec, 5% );
+
 
 @mixin font-sec {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -80,11 +77,11 @@ $color-prim: white;
 
   @keyframes animation-menu {
    100% {
-       background-color: $color-ter;}
+       background-color: $color-sec;}
   }
   @keyframes animation-menu-resp {
     100% {
-        background-color: $color-ter;
+        background-color: $color-sec;
         color: white}
    }
 @mixin hover-animation {
@@ -191,8 +188,12 @@ body {
             }       
         }
     }
+    &__li--active {
+        background-color: $color-sec;
+    }
 }
-        
+
+    
 .image {
     border-radius: 50%;
     border-color: $darker-color-sec;
@@ -208,7 +209,7 @@ body {
 }
 
 .icon-right {
-    color: $color-ter;
+    color: $color-sec;
 }
 
 /* styles for the navigation */
@@ -225,8 +226,8 @@ body {
 hr {
     height:1px; 
     border:none;
-    color: $color-ter; 
-    background-color: $color-ter; 
+    color: $color-sec; 
+    background-color: $color-sec; 
     width: 100%; 
 }
 
@@ -269,7 +270,7 @@ ul.n-item {
 }
 
 ul.n-item li::before {
-    color: $color-ter;   
+    color: $color-sec;   
     content: "\2022"; 
     margin-right:0.4em;
     font-size: 1.8em;
@@ -278,7 +279,7 @@ ul.n-item li::before {
 
 .fa-bullseye {
     font-size: 1em;
-    color: $color-ter;
+    color: $color-sec;
     margin-right:0.6em;
 }
 
@@ -351,6 +352,14 @@ ul.n-item li::before {
 
         .section__right {
            margin-bottom: 0.5em;
+           margin-left: 1.5em;
+
+        }
+        .hobbies {
+            flex-wrap: wrap;
+        }
+        .hobbies > div {
+            padding: 0.4em 0.4em;
         }
         li > br {
             display: none;
@@ -370,12 +379,11 @@ ul.n-item li::before {
             margin: 0.2em 0.2em 0.2em 0.2em;
             float: left;
         }
-    
-        /* set hiding ul fas icons, pseudo bullets and name section */
-       .fa-bullseye, .name-desktop, ul.n-item li::before   {
-            display:none;
-        } 
-    
+
+    .place {
+        display: block
+    }
+
       .nav {
         position: sticky;
         top: 0;
@@ -389,7 +397,7 @@ ul.n-item li::before {
         &__h1 {
             font-size: 1em;
             font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-            color: $color-ter;
+            color: $color-sec;
             display:inline-block;
             vertical-align: middle;
             line-height: 2.6em;
@@ -437,6 +445,5 @@ ul.n-item li::before {
         }
     */
      }
-/* clean the code!*/
-/* sent before friday */
-/* prepare presentation */
+/* sass commet use of*/
+/* html semantinc */
