@@ -1,18 +1,20 @@
-adding title to homepage
-removing meta keywords
+adding text to the title tag in the homepage
+removing meta keywords 
 improving meta description
 more appealing and catchy cta should be used
-removing the directories from the footer, they make no sense or at least set a nofollow rel= and a target_blank
+removing the directories from the footer, they make no sense or at least set a rel=nofollow and a target_blank
 add a self referencing canonical
-keyword stuffing alt text in the images
-too many h1 that could be changed to h2
+keyword stuffing alt text in the images **
+too many h1 that could be changed to h2 
 make the big text responsive, not looking good on mobile
-respect the order inside the head <meta> CSS JS
+respect the order inside the head <meta> ---> CSS ---> JS
 css could be minified
-js can be compressed
-image should be published in a correct format not bmp
+js can be compressed **
+image should be published in a correct format not bmp!!
 size of images can be reduced?
 async deferr JS?
-reduce the  weight of the network load
-change the anhor text and the url slug for the page2 to contact page
-review internal linking
+reduce the  weight of the network load **
+change the anchor text and the url slug for the page2 to contact page
+change "other page" anchor text in the page2
+review internal linking generally
+contrast should be improved - accessibilty
